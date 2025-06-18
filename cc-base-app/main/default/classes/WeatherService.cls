@@ -11,7 +11,7 @@ public class WeatherService {
         Integer currentYear = Date.today().year();
         Integer yearDelta = currentYear - dateToCheck.year();
         dateToCheck = dateToCheck.addYears(yearDelta);
-        String isoDate = dateToCheck.format('yyyy-MM-dd');
+        String isoDate = dateToCheck.format('yy-MM-dd');
         String dateString = dateToCheck.format('MMMM d');
 
         // Prepare API request
